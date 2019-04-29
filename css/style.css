@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
-
 .main-screen{
     height: 100vh;
     border-bottom-left-radius: 260px;
@@ -12,15 +11,13 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.header{
+.main-screen__header{
     height: 16vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 220px;
 }
-
 .button{
     padding: 24px 40px 22px 40px;
     color: white;
@@ -29,7 +26,6 @@
     display: inline-block;
     border-radius: 10px;
 }
-
 .main-screen__content{
     height: 84vh;
     display: flex;
@@ -38,41 +34,40 @@
     padding-left: 150px;
     padding-right: 80px;
 }
-
 .main-screen__left-side{
     flex-basis: 600px;
 }
-
-.main-screen__headline{
+.headline{
     font-size: 46px;
+}
+.main-screen__headline{
     color: white;
 }
-
-.main-screen__paragraph{
+.paragraph{
     display: block;
-    color: white;
     line-height: 26px;
     font-size: 16px;
 }
-
-.main-screen__paragraph-conteiner{
+.main-screen__paragraph{
+    color: white;
+}
+.main-screen__paragraph-container{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 .main-screen__right-side{
-    overflow: hidden;
     flex-basis: 500px;
     position: relative;
-    overflow: visible;
+    margin-left: 29px;
+    /*margin-right: 29px; */   
 }
 .main-screen__right-side:before,
 .main-screen__right-side:after {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background: url(../img/dot.svg);
+    width: 205px;
+    height: 205px;
+    background: url("../img/dot.svg");
 }
 .main-screen__right-side:before {
     top: -28px;
@@ -83,14 +78,12 @@
     right: -29px;
     transform: rotate(180deg);
 }
-
-.main-screen__video-conteiner{
+.main-screen__video-container{
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    padding-bottom: 66%;
+    padding-bottom: 56.25%;
 }
-
 .main-screen__video {
 	position: absolute;
 	top: 0;
@@ -98,20 +91,109 @@
 	width: 100%;
 	height: 100%;
 }
-
 .main-screen__button-active{
     background-color: #0ad7ba;
 }
-
 .right-side_left-top-decoration{
     position: absolute;
     left: -30px;
     top: -30px;
 }
-
 .right-side_right-buttom-decoration{
     position: absolute;
     right: -30px;
     bottom: -30px;
 }
-
+.expectation-screen{
+    height: 100vh;
+    border-bottom-right-radius: 260px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+.screen-headline{
+    color: #1e2162;
+    text-align: center;
+    
+}
+.screen-headline-container{    
+    height: 35%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.screen-headline__decoration{
+    background: url("../img/screen-headline-decoration.svg");
+    background-repeat: no-repeat; 
+    width: 61px;
+    height: 13px;
+}
+.screen-headline__decoration-container{
+    padding-bottom: 20px;
+}
+.expectation-screen__content{
+    display: flex;
+    padding: 0 140px;
+    justify-content: space-between;
+}
+.expectation-screen__button{
+    background-color: #1e2162;
+}
+.expectation-screen__middle-container{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    height: 55vh;
+}
+.expectation-screen__content-headline{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+.expectation-screen__side-container{
+    flex-basis: 260px;
+}
+.brilliance-screen{
+    height: 75vh;
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0.2) 100%, rgba(200, 200, 200, 0.2) 100%), url("../img/vector-dots-world-map-5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.expectation-screen-container{
+    position: relative;
+    height: 100vh;
+}
+.expectation-screen-container__right-bottom-corner{
+    background-image: linear-gradient(to right, rgba(200, 200, 200, 0.2) 100%, rgba(200, 200, 200, 0.2) 100%);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.brilliance-screen__content-container{
+    background-color: white;
+    padding-bottom: 50px;
+    
+}
+.brilliance-screen-content{
+    display: flex;
+    justify-content: space-around;
+}
+.brilliance-screen__headline{
+    font-size: 18px;
+    font-weight: bold;
+}
+.brilliance-screen__headline-container{
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+.expectation-screen__top-paragraph{
+    padding-bottom: 35px;
+}
